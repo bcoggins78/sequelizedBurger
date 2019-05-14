@@ -2,8 +2,8 @@ var db = require("../models");
 
 module.exports = function (app) {
 
+  // get route
   app.get("/api/burgers", function (req, res) {
-    // express callback response by calling burger.selectAllBurger
     db.Burger.findAll({}).then(function (burgerData) {
       res.json(burgerData);
     });
@@ -23,8 +23,9 @@ module.exports = function (app) {
   // put route
   app.put("/api/burgers/:id", function (req, res) {
     db.Burger.update({
+      // Changes devoured status to true
       devoured: true,
-    },{
+    }, {
         where: {
           id: req.params.id
         }

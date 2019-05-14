@@ -20,6 +20,7 @@ app.use(express.static("public"));
 // Import routes and give the server access to them.
 require("./controllers/burgersController.js")(app);
 
+// Sync the sequelize model and starts the express app
 db.sequelize.sync({ force: false }).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
