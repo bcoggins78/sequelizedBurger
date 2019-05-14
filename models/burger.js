@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1, 160]
+        len: [1]
       }
     },
     devoured: {
@@ -13,8 +13,6 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   });
-
- 
 
   return Burger;
 };
