@@ -1,4 +1,4 @@
-# Sequelized Burger
+# Eat-Da-Burger!
 
 ### UNC Coding Bootcamp Week 14 Homework Project
 
