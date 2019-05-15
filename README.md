@@ -5,7 +5,7 @@
 #### Heroku Link to Project:
 [https://safe-shelf-43250.herokuapp.com/](https://safe-shelf-43250.herokuapp.com/)
 
-This week introduced the use of Sequelize. This is a node based app that uses JavaScript in place of datbase queries.
+This week introduced the use of Sequelize. This is a node based app that uses JavaScript in place of MySQL database queries.
 
 This project uses:
 
